@@ -1,0 +1,342 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'quicksand' , sans-serif;
+        height: 100vh;
+        margin: 0;
+        background-color: #EFFFFB;
+
+        display: flex;
+        flex-direction: column;
+    
+}
+  
+/* Header Navbar */
+
+header.navbar-container {
+
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 0.5rem; 
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+
+
+}
+
+header.navbar-container .logo img {
+
+    width: 350px;
+    
+}
+
+
+
+header.navbar-container .nav-list ul {
+
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+
+}
+
+header.navbar-container .nav-list li {
+
+    list-style-type: none;
+    
+}
+
+header.navbar-container .nav-list li a  {
+
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #50D890;
+    color:white;
+
+}
+
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+ 
+  }
+  
+  .dropdown-button {
+    padding: 0rem 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    font-family: 'quicksand' , sans-serif;
+    width: 100%;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+    
+  }
+
+  .dropdown-button:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;   
+  }
+
+  /* Konten dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    
+    
+  }
+  
+  .dropdown:hover {
+    background-color: #50D890; 
+    border-radius: 999px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    
+    
+    
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Tampilkan dropdown saat hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: white;
+    color:white;
+    
+  }
+  
+/* Main */
+
+main {
+  flex: 1;
+
+  width:100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 0.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+
+article {
+
+  padding: 1.4rem;
+  
+}
+article .destinasi {
+
+  flex: 5;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+
+main .content .content-description p{
+
+  font-size: 1.2rem;
+  font-weight: 2rem;
+}
+
+main .content .content-description button {
+
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius:999px;
+  margin-block-start: 1rem;
+
+  background-color: #50D890 ;
+
+  font-family: 'quicksand' , sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover {
+
+  border :3px solid #50D890;
+  background-color: transparent;
+
+  color: black;
+  
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+  width: 300px;
+}
+
+main .content .content-image img {
+
+  width: 450px ;
+  min-width: 100px;
+  margin: auto;
+  
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex ;
+
+}
+main aside .social-media ul {
+
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #50D890;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap : 1.5rem;
+}
+
+main aside .social-media li  {
+
+  list-style-type: none;
+
+}
+
+main aside .social-media li a {
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+
+  transition: 0.2s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+
+  color: #4f98ca;
+}
+
+/* Footer */
+
+footer {
+
+  padding: 20px;
+  color: white;
+  background-color: #4f98ca;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Response devices (768px dan di bawahnya)*/
+
+@media screen and (max-width : 768px ) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .content .content-description .title{
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image{
+
+    order: -1;
+  }
+
+  footer {
+   flex-flow: nowrap;
+
+  }
+
+}
